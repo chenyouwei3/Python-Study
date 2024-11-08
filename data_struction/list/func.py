@@ -10,7 +10,8 @@ print("出现次数"+str(list.count(70.2)))
 list.reverse()
 print(list)
 
-#排序  值类型必须是同一类型
+#排序函数
+#值类型必须是同一类型
 list = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]
 list.sort(reverse=True)  # 降序排序
 list.sort()
@@ -19,5 +20,10 @@ print(list)
 list = ['banana', 'apple', 'cherry', 'date']
 list.sort(key=len)  # 根据字符串长度进行排序
 print(list)
-list.clear()
+#复制函数
+newlist=list.copy()#浅拷贝
+print("新数组",newlist)
+list.clear()  #清空函数
 print(list)
+
+
